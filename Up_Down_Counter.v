@@ -1,7 +1,7 @@
 
-timescale 1ns / 1ps
+timescale 1ns 1ps
 / /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
-Up_down counter
+// counter
 / /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
 module up_down
 (parameter N = 10, 
