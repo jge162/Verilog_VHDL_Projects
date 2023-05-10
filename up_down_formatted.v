@@ -1,7 +1,5 @@
 timescale 1ns / 1ps
-/ /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
-Up_down counter
-/ /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+// up down counter 
 module up_down
 (parameter N = 10, 
 parameter WIDTH = 7) (
@@ -29,9 +27,9 @@ IF (reset == 1'b0)
 		 assign count = tmp;
 		 seven_segment_decoder uut (.bin_in(count), .hex_out(hex_out));
 		 endmodule
-		 / /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
-		 Clock Divider
-		 / /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+		 // * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+		 // Clock Divider
+		 // * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
 		 module clock_divider(
 		 input clk, 
 		 input reset, 
@@ -52,9 +50,9 @@ IF (reset == 1'b0)
 	 END
  END
  END endmodule
- / /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
- Segement 7
- / /* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+ // * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
+ // Segement 7
+ // * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 
  module seven_segment_decoder(
  input [3 : 0] bin_in, output reg [6 : 0] hex_out);
  reg [6 : 0] hex_out;
